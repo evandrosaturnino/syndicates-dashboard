@@ -22,7 +22,7 @@ function StatsCard({
       <div className="border-b border-b-grey4 pb-3">
         <div className="flex items-center gap-3">
           <span>Network Stats</span>
-          <Tooltip content="Here follows all the network stats" />
+          <Tooltip content="All the network stats related to the syndicates" />
         </div>
       </div>
       <div className="flex items-center justify-between">

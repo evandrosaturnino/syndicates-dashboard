@@ -7,7 +7,7 @@ import {
   processSyndicates,
   ISyndicate
 } from '../utils/processData';
-import MyChart from '../components/Chart';
+import Chart from '../components/Chart';
 import { GetStaticProps } from 'next';
 import { fetchSyndicateData } from './api/syndicateData';
 import { useConnectWallet } from '@web3-onboard/react';
@@ -113,21 +113,21 @@ function Home({
               imageUrl="/icons/total-syndicates.svg"
               imageAlt="tooltip"
               data={syndicates.length}
-              tooltipInfo="dada"
+              tooltipInfo="A Syndicate is a fund splitting contract. The Syndicate splits fees (MEV and tips) into half and distributes them to the node runners smart wallet and the MEV Staking Pool."
             />
             <TopDashboardCard 
               title="Total Payout"
               imageUrl="/icons/total-payout.svg"
               imageAlt="tooltip"
               data={totalPayout}
-              tooltipInfo="dada"
+              tooltipInfo="Total tips produced within the syndicates system."
             />
             <TopDashboardCard 
               title="Node Operators Payout"
               imageUrl="/icons/node-operators.svg"
               imageAlt="tooltip"
               data={totalNodeOperatorsPayout}
-              tooltipInfo="dada"
+              tooltipInfo="A payout is referred to the tip that validators receive to the sydicate for producing blocks."
             />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -140,7 +140,7 @@ function Home({
               percentChange={percentChange} 
             />
             <div className="w-full lg:col-span-2 bg-gray-900">
-              <MyChart data={dailyPayouts} />
+              <Chart data={dailyPayouts} />
             </div>
           </div>
           <h1 className="mt-2">
