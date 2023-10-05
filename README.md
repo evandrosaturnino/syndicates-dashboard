@@ -17,6 +17,12 @@ This project serves as a responsive dashboard for visualizing various metrics re
 
 ---
 
+### Design Prototype
+
+Before diving into the code, I created a design prototype using Figma to outline the user interface and experience. This design-first approach allowed for a more efficient development process, ensuring that all UI components were well-planned in advance. You can view the design prototype here: https://www.figma.com/file/W91dLoajx0Y0btU68PYhY7/Blockswap-Dashboard?type=design&node-id=0%3A1&mode=design&t=EDF7Zyu93x0sKCwI-1
+
+---
+
 ### Technologies Used
 - **Next.js**: For server-side rendering and as the framework for building the application.
 - **TypeScript**: To add static typing to JavaScript files.
