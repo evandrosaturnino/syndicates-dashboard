@@ -170,7 +170,7 @@ function Home({
                   <span className="col-span-2">{lsdIndex}</span>
                   <span className="col-span-2">{wallet}</span>
                   <Link href={etherscanUrl} target="_blank">
-                    <div className="relative w-4 h-4">
+                    <div className="relative w-4 h-4 focus:outline-none">
                       <Image
                         src="/icons/external-link.svg"
                         alt="external-link"
