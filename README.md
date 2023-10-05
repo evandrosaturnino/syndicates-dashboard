@@ -1,38 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Syndicate Data Visualization Dashboard
 
-## Getting Started
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Technologies Used](#technologies-used)
+3. [Setup and Installation](#setup-and-installation)
+4. [Features](#features)
+5. [Challenges and Solutions](#challenges-and-solutions)
+6. [Approach to the Hack Challenge](#approach-to-the-hack-challenge)
+7. [Time Constraints](#time-constraints)
+8. [Future Improvements](#future-improvements)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Introduction
+This project serves as a responsive dashboard for visualizing various metrics related to syndicates in liquid staking networks. It was developed as part of a hack challenge to showcase my skills and to provide valuable insights into syndicate data.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Technologies Used
+- **Next.js**: For server-side rendering and as the framework for building the application.
+- **TypeScript**: To add static typing to JavaScript files.
+- **Axios**: For making API calls to fetch syndicate data.
+- **ChartJS**: For visualizing data related to syndicates.
+- **Tailwind CSS**: For rapid and responsive UI development.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Setup and Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Prerequisites
+- NodeJS (>=12.x)
+- Yarn package manager
 
-## Learn More
+#### Installation Steps
+1. Clone the repository
+   ```
+   git clone https://github.com/YourGithubUsername/Syndicate-Data-Visualization.git
+   ```
+2. Change into the project directory
+   ```
+   cd Syndicate-Data-Visualization
+   ```
+3. Install dependencies
+   ```
+   yarn install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server
+   ```
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Features
+- **Total Syndicate Count**: Shows the total number of syndicates across all networks.
+- **Total Payout**: Displays the total payout from all syndicates.
+- **Node Operators Payout**: Shows how much payout has been made to node operators.
+- **Daily Payout Chart**: A line chart that shows the daily payout over time.
+- **Syndicate Table**: A detailed table that displays various metrics for each syndicate, including a link to its Etherscan address.
+- **Responsiveness**: The dashboard is fully responsive, thanks to Tailwind CSS, providing an optimal viewing experience on various devices.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Challenges and Solutions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Data Complexity
+**Challenge**: The syndicate data fetched from the a Subgraph API was complex and required significant preprocessing.
+
+**Solution**: Created utility functions to cleanly process the data and prepare it for visualization, thus improving code reusability.
+
+#### Time Management
+**Challenge**: Due to concurrent project commitments, time management was a significant challenge.
+
+**Solution**: Utilized Tailwind CSS for quicker UI development and ChartJS for straightforward data visualization, thus saving time.
+
+#### Responsiveness
+**Challenge**: Ensuring the dashboard is fully responsive and compatible across multiple devices.
+
+**Solution**: Tailwind CSS was instrumental in ensuring the UI scales elegantly on different screen sizes without much manual intervention.
+
+---
+
+### Approach to the Hack Challenge
+1. **Data Fetching**: Used Axios to fetch data from a Subgraph endpoint that provides information about syndicates.
+2. **Data Processing**: Created utility functions to process and prepare the data for visualization.
+3. **UI Components**: Created reusable UI components using Tailwind CSS to display the data.
+4. **Data Visualization**: Used ChartJS to plot the daily payout data.
+5. **Web3 Integration**: Used Blocknative's web3 onboard library to enable users to connect their Ethereum wallets.
+
+---
+
+### Future Improvements
+- Implement more robust error handling.
+- Add more interactive elements to the chart.
+- Enable users to filter and sort the syndicate table.
+
+---
