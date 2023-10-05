@@ -74,7 +74,7 @@ function Home({
               >
                 <div className="relative w-[1rem] h-[0.9rem]">
                   <Image
-                    src="/icons/metamask.png"
+                    src="/icons/metamask.svg"
                     alt="blockswap"
                     fill={true}
                     sizes="(min-width: 1rem) 24vw"
@@ -89,7 +89,7 @@ function Home({
               >
                 <div className="relative w-[1rem] h-[0.9rem]">
                   <Image
-                    src="/icons/metamask.png"
+                    src="/icons/metamask.svg"
                     alt="blockswap"
                     fill={true}
                     sizes="(min-width: 1rem) 24vw"
